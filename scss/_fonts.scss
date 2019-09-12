@@ -1,0 +1,37 @@
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+
+@mixin Georgia {
+	@font-face {
+		font-family: 'Georgia', serif;
+		font-style: normal;
+		font-weight: 400;
+		src: url('../fonts/Georgia.woff') format('woff2');
+	}
+}
+@mixin GeorgiaItalic {
+	@font-face {
+		font-family: 'Georgia', serif;
+		font-style: italic;
+		font-weight: 400;
+		src: url('../fonts/Georgia-Italic.woff') format('woff2');
+	}
+}
+
+@mixin GeorgiaIbold {
+	@font-face {
+		font-family: 'Georgia', serif;
+		font-style: normal;
+		font-weight: 700;
+		src: url('../fonts/Georgia-BoldItalic.woff') format('woff2');
+	}
+}
